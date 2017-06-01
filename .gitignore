@@ -1,0 +1,52 @@
+#
+#        Clifis v1.0b (c) 2017 Escuela Técnica Superior de Ingeniería de Sistemas Informáticos (UPM)
+#
+#        This file is part of Clifis.
+#
+#        Clifis is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        (at your option) any later version.
+#
+#        Clifis is distributed in the hope that it will be useful,
+#        but WITHOUT ANY WARRANTY; without even the implied warranty of
+#        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#        GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with Clifis.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+
+## IDE
+.idea/
+*.iml
+out/
+target/
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+!/lib/commons-codec-1_10/*.jar
+!/lib/*.jar
+!/lib/xalan-j_2_7_2/*.jar
+!/lib/jstl-1_2_5/*.jar
+!/lib/tomcat/*.jar
+!/lib/slf4j_1_7_25/*.jar
+!/lib/logback_1_2_3/*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

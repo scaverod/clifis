@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} |-[%-5level] [%thread] %logger{36} - %msg%n%ex{short}</Pattern>
+        </layout>
+    </appender>
+
+    <logger name="es.upm.etsisi.clifis.gestores" level="debug"/>
+    <logger name="es.upm.etsisi.clifis.servlets" level="debug"/>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

@@ -1,0 +1,64 @@
+/*
+        Clifis v1.0b (c) 2017 Escuela Técnica Superior de Ingeniería de Sistemas Informáticos (UPM)
+
+        This file is part of Clifis.
+
+        Clifis is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        Clifis is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with Clifis.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+    background-image: url("../images/fondo.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-color: #6785AA;
+    background-size: 100% !important;
+    background-position: bottom;
+}
+
+/* Los div que lleven esto serán scrollables por dentro. */
+.clifis_scrollable {
+    height: 60%;
+    overflow-y: auto;
+    margin-bottom: 5px;
+ }
+
+/* Estilo para el banner */
+.clifis_banner_style {
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-family: "josefin slab", serif;
+}
+
+/* Estilo para los contendedores */
+.clifis_container {
+    font-family: 'Raleway', sans-serif; !important;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Estilo para los formularios */
+form {
+    /* Separa los inputs del borde del contenedor */
+    padding-left: 10px;
+}
+
+/* Estilo para items de memú no implementados */
+.not_implemented {
+    text-decoration: line-through;
+}
