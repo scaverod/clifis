@@ -1,5 +1,5 @@
 # clifis
-Práctica de FIS (Grupo 6)
+Práctica de FIS (Grupo 7)
 
 *La Clínica Universitaria de la UPM desea realizar una aplicación para la
 gestión de las citas de sus pacientes, así como de la disponibilidad de
