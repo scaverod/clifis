@@ -81,14 +81,7 @@ public class AdmMedico extends HttpServlet{
                     LOG.debug("No se ha podido pasar el String con id a tipo int. Se fuerza a que sea 0 (indica id no válido)." , e);
                     id = 0;
                 }
-
                 Medico medico_obj = this.gestorMedicos.getMedicoById(id);
-
-                /*Medico medico_obj = new MedicoBuilder()
-                        .setId(id)
-                        .setNombre(req.getParameter(medico_id))
-                        .build();*/
-
                 gestorMedicos.bajaMedico(medico_obj);
                 medicos.add(medico_obj);
             } catch (GestorException e) {
@@ -96,14 +89,12 @@ public class AdmMedico extends HttpServlet{
                 LOG.debug("Capturada una GestorException al dar de baja una medico.", e);
             }
         }
-
         if (medicos.size() > 0)
             req.setAttribute("medicos", medicos);
 
         if (execepciones.size() > 0)
             req.setAttribute("excepciones", execepciones);
     }
-
 
     private void modificarMedico(HttpServletRequest req){
         Medico medico;
@@ -116,9 +107,5 @@ public class AdmMedico extends HttpServlet{
             excepciones.add(e);
             req.setAttribute("excepciones", excepciones);
         }
-
-
-
     }
-
 }
